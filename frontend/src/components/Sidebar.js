@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { 
   Home, TrendingUp, LineChart, Activity, Brain, 
   BarChart3, Gauge, MessageSquare, GitCompare, 
-  Wallet, Menu, X, Bitcoin 
+  Wallet, Menu, X, Bitcoin, TrendingDown 
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
