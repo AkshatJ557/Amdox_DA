@@ -1,0 +1,175 @@
+{
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "headings": "font-bold",
+      "body": "font-normal",
+      "mono": "font-medium"
+    },
+    "sizes": {
+      "h1": "text-4xl md:text-5xl tracking-tight",
+      "h2": "text-3xl tracking-tight",
+      "h3": "text-2xl tracking-tight",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-muted-foreground",
+      "mono_lg": "text-xl tracking-wide",
+      "mono_sm": "text-xs tracking-wide"
+    }
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#09090B",
+      "foreground": "#FAFAFA",
+      "card": "#18181B",
+      "card_foreground": "#FAFAFA",
+      "popover": "#18181B",
+      "popover_foreground": "#FAFAFA",
+      "primary": "#10B981",
+      "primary_foreground": "#09090B",
+      "secondary": "#27272A",
+      "secondary_foreground": "#FAFAFA",
+      "muted": "#27272A",
+      "muted_foreground": "#A1A1AA",
+      "accent": "#8B5CF6",
+      "accent_foreground": "#FAFAFA",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#FAFAFA",
+      "border": "#27272A",
+      "input": "#27272A",
+      "ring": "#10B981"
+    },
+    "semantic": {
+      "profit": "#10B981",
+      "loss": "#EF4444",
+      "neutral": "#3B82F6",
+      "forecast": "#8B5CF6",
+      "bitcoin": "#F7931A",
+      "ethereum": "#627EEA"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "bg-zinc-900/60 backdrop-blur-xl border border-white/10 shadow-2xl",
+    "neon_glow": "shadow-[0_0_20px_rgba(16,185,129,0.3)]",
+    "grid_lines": "bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]",
+    "gradients": {
+      "hero": "bg-gradient-to-br from-zinc-900 via-zinc-950 to-black",
+      "card_hover": "hover:bg-zinc-800/80 transition-colors duration-300"
+    }
+  },
+  "layout": {
+    "grid_system": "Bento Grid Mode B (High Density)",
+    "container": "max-w-[1600px] mx-auto p-6 md:p-8",
+    "spacing": {
+      "section_gap": "gap-6",
+      "widget_gap": "gap-4",
+      "internal_padding": "p-6"
+    },
+    "sidebar": {
+      "width": "w-64",
+      "collapsed_width": "w-16",
+      "style": "fixed left-0 top-0 h-full border-r border-white/10 bg-zinc-950/90 backdrop-blur-md z-50"
+    }
+  },
+  "components": {
+    "cards": {
+      "default": "rounded-xl border border-white/10 bg-zinc-900/50 backdrop-blur-sm p-6 shadow-sm hover:border-white/20 transition-all duration-300",
+      "highlight": "rounded-xl border border-primary/20 bg-primary/5 p-6 shadow-[0_0_30px_rgba(16,185,129,0.1)]"
+    },
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_rgba(16,185,129,0.4)] rounded-lg px-6 py-2 font-medium transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-lg px-6 py-2 font-medium transition-all active:scale-95",
+      "ghost": "hover:bg-white/5 text-muted-foreground hover:text-foreground rounded-lg px-4 py-2 transition-colors"
+    },
+    "charts": {
+      "library": "react-plotly.js",
+      "theme": "dark",
+      "background": "transparent",
+      "font_family": "Manrope, sans-serif"
+    },
+    "inputs": {
+      "style": "bg-zinc-950/50 border-white/10 focus:border-primary/50 focus:ring-1 focus:ring-primary/50 rounded-lg h-10 px-4 transition-all"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "transitions": {
+      "page_load": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.4, "ease": "easeOut" }
+      },
+      "list_item": {
+        "initial": { "opacity": 0, "x": -20 },
+        "animate": { "opacity": 1, "x": 0 },
+        "transition": { "type": "spring", "stiffness": 300, "damping": 24 }
+      }
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1762279388956-1c098163a2a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRpZ2l0YWwlMjBkYXRhJTIwd2F2ZXMlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3Njk5NDcyODV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract neon digital waves for home dashboard background"
+      },
+      {
+        "category": "bitcoin_logo",
+        "url": "https://images.unsplash.com/photo-1707075891517-c23d276feef7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxiaXRjb2luJTIwY3J5cHRvJTIwY29pbnxlbnwwfHx8fDE3Njk5NDcyNzR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Bitcoin gold coin for asset headers"
+      },
+      {
+        "category": "ethereum_logo",
+        "url": "https://images.unsplash.com/photo-1622618907983-eafb6b145ee0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxldGhlcmV1bSUyMGNyeXB0byUyMGNvaW58ZW58MHx8fHwxNzY5OTQ3Mjc5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Ethereum coins for asset headers"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width: 1.5px"
+    }
+  },
+  "libraries": {
+    "charts": "react-plotly.js plotly.js-dist-min",
+    "motion": "framer-motion",
+    "icons": "lucide-react",
+    "utils": "clsx tailwind-merge",
+    "dates": "date-fns",
+    "notifications": "sonner"
+  },
+  "instructions_to_main_agent": [
+    "Implement a 'SidebarLayout' component that wraps all dashboard pages.",
+    "Use 'react-plotly.js' for all financial charts (Candlestick, Line, Area). Configure them with the dark theme template.",
+    "For the 'Home' dashboard, use the 'Bento Grid' layout to display Key Performance Indicators (KPIs) like 'Current Price', '24h Change', 'Market Cap', and 'Volume'.",
+    "Use 'framer-motion' to animate the entry of dashboard cards.",
+    "Ensure all text colors meet APCA contrast standards against the dark background.",
+    "Use the 'glassmorphism' class for all main containers to give a premium fintech feel.",
+    "The 'Real-Time Data' page should simulate live updates using 'useEffect' and 'setInterval' if a real socket is not available, updating the chart every 5 seconds.",
+    "For 'Model Comparisons', use a multi-line chart to show Actual vs. Predicted values.",
+    "Use 'sonner' for all system alerts and notifications.",
+    "Do not use gradients for text. Keep text solid white or light gray for readability."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: 'transition: all'. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms.",
+    "You MUST NOT center align the app container, ie do not add '.App { text-align: center; }' in the css file. This disrupts the human natural reading flow of text.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮 for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories = main agent will use placeholder text which is FORBIDDEN.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Components MUST use named exports (export const ComponentName = ...).",
+    "Pages MUST use default exports (export default function PageName() {...}).",
+    "Use 'sonner' for toasts."
+  ]
+}
