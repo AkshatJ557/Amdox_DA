@@ -164,7 +164,11 @@ def get_latest_prices():
     cursor.execute('''
         SELECT coin, price, volume_24h, market_cap, change_24h, timestamp
         FROM real_time_data
-        WHERE timestamp = (SELECT MAX(timestamp) FROM real_time_data WHERE coin = real_time_data.coin)
+        WHERE (coin, timestamp) IN (
+            SELECT coin, MAX(timestamp)
+            FROM real_time_data
+            GROUP BY coin
+        )
     ''')
     
     results = cursor.fetchall()
