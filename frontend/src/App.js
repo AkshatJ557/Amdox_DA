@@ -8,6 +8,7 @@ import { Sidebar } from "./components/Sidebar";
 import HomePage from "./pages/HomePage";
 import RealTimePage from "./pages/RealTimePage";
 import HistoricalPage from "./pages/HistoricalPage";
+import TechnicalAnalysisPage from "./pages/TechnicalAnalysisPage";
 import ARIMAPage from "./pages/ARIMAPage";
 import ProphetPage from "./pages/ProphetPage";
 import LSTMPage from "./pages/LSTMPage";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/real-time" element={<RealTimePage />} />
             <Route path="/historical" element={<HistoricalPage />} />
+            <Route path="/technical" element={<TechnicalAnalysisPage />} />
             <Route path="/arima" element={<ARIMAPage />} />
             <Route path="/prophet" element={<ProphetPage />} />
             <Route path="/lstm" element={<LSTMPage />} />
