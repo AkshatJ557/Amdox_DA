@@ -11,6 +11,7 @@ const navigation = [
   { name: 'Home', path: '/', icon: Home },
   { name: 'Real-Time', path: '/real-time', icon: TrendingUp },
   { name: 'Historical', path: '/historical', icon: LineChart },
+  { name: 'Technical Analysis', path: '/technical', icon: TrendingDown },
   { name: 'ARIMA Forecast', path: '/arima', icon: Activity },
   { name: 'Prophet Forecast', path: '/prophet', icon: Brain },
   { name: 'LSTM Forecast', path: '/lstm', icon: BarChart3 },
